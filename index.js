@@ -35,12 +35,9 @@ app.use(productValidate);
 app.use("/api/v1/categories", dynamicCrud(Category));
 app.use("/api/v1/products", dynamicCrud(product));
 
-// app.get('/', (req, res) => {
-//   return res.json({ message: `Welcome Dimas` });
-// });
-
 const PORT = env.PORT;
 
+// Server running
 app.listen(PORT, () => {
   console.log(`Server running on port http://localhost:${PORT}`);
 });
